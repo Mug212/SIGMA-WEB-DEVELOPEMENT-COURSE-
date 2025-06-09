@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Sizing Units</title>
     <style>
+        html {
+            font-size: 16px;
+            /* Base font size */
+            background-color: rgb(57, 116, 134);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         .box {
-            width: 200px;
-            height: 200px;
-            background-color: rgb(64, 150, 179);
-            border: 2px solid blue;
+            /* width: 2048px; */
+            width: 100vw;
+            height: 6vh;
+            background-color: rgb(127, 186, 201);
+            border: 3px solid blue;
+            padding: 2px;
+            /* margin: 10px auto; */
+            text-align: center;
+        }
+
+        .container {
+            font-size: 1.5rem;
+            margin: 10px;
+            border: 2px solid black;
+            padding: 5px;
+            width: 50%;
+            border: 2px solid black;
+            margin: 10px auto;
+            height: auto;
+            background-color: rgb(63, 146, 172);
+        }
+
+        .container>div>div {
+            font-size: 1.2rem;
+            margin: 5px;
+            border: 2px solid black;
+            padding: 5px;
+            background-color: rgb(143, 214, 224) !important;
+            height: auto;
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .container div {
+            width: 100vw;
+            width: 50%;
+            height: auto;
+            background-color: rgb(122, 186, 206);
+            border: 3px solid blue;
             padding: 10px;
-            margin: 20px;
+            margin: 10px auto;
+            text-align: center;
+            font-size: 20px;
+        }
+
+
+
+
+
+        .mycont {
+            background-color: red;
+            color: yellow;
+            font-size: 20px;
+            width: 80vmax;
+            height: 6vmin;
+            padding: 10px;
+            margin: 10px auto;
+            text-align: center;
+            border: 3px solid black;
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         <h1>This is a box</h1>
     </div>
+    <div class="container">
+        <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eius obcaecati hic non sit deleniti quae
+            est
+            et? Tenetur ducimus vel sequi rerum? Laborum, nostrum odit quo ex magnam neque assumenda modi, dignissimos
+            inventore est perferendis accusantium impedit. Reprehenderit expedita error repudiandae nihil perspiciatis
+            temporibus quas molestias beatae. Necessitatibus debitis sapiente iusto incidunt ab voluptates provident.
+            <p>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dolorem eaque ea cupiditate ex dignissimos
+                error atque quidem? Ex excepturi quae facilis sequi eius impedit eveniet, harum fugiat temporibus
+                libero.</div>
+            </p>
+        </div>
+    </div>
+    <div class="mycont">
+        <p> This is my container.</p>
+    </div>
 </body>
+
 </html>
