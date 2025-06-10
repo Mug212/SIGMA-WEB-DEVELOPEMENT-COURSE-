@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling LISTS using CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        Nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        Nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        Nav ul li {
+            margin: 0 35px;
+        }
+        Nav ul li:hover {
+            text-decoration: dashed underline;
+        }
+    </style>
+</head>
+<body>
+    <Nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </Nav>
+</body>
+</html>

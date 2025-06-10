@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; Ensures padding and border are included in element's total width and height */
+        }
+
+        .box {
+            display: inline-block; /* Change to inline-flex, flex, or grid as needed */
+            width: 100px;
+            height: 20px;
+            background-color: lightblue;
+            border: 3px solid rgb(0, 0, 253);
+            border-radius: 60px;
+            margin: 45px;
+            padding: 34px;
+            text-align: center; /* Center text horizontally */
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 5px 5px 15px 2px #133ba8a6 inset;
+            text-shadow: 1px 9px 4px #3a3939;
+            /* text-shadow: h-offset v-offset blur color; */
+        }
+
+        p{
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #dfd3d3;
+            border: 1px solid #a09d9d;
+            border-radius: 70px;
+            text-shadow: 1px 9px 9px #615f5f;
+            box-shadow: 12px 12px 10px 2px rgb(0, 0, 0);
+            /* box-shadow: h-offset v-offset blur spread color; */
+            text-align: justify; /* Justify text for better readability */
+            outline: 2px solid #ff0000; /* Adds a solid outline around the paragraph */
+            outline-offset: 9px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="box">i am a box</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, veritatis dignissimos. Quae cupiditate, enim minus qui sint dignissimos id. Molestiae qui error, deserunt dolorum, debitis impedit similique ut ipsum autem dolore doloremque fugit iste aperiam minus excepturi cupiditate quia pariatur, nihil minima eligendi repudiandae vel expedita? Placeat explicabo non eaque.</p>
+</body>
+</html>
