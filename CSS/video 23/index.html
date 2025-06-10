@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; Ensures padding and border are included in element's total width and height */
+        }
+        
+        .box {
+            display: inline-block;
+            /* display: inline-flex; */
+            /* display: flex; */
+            /* display: grid; */
+            /* justify-content: center; */
+            width: 100px;
+            height: 20px;
+            background-color: lightblue;
+            border: 3px solid rgb(0, 0, 253);
+            margin: 34px;
+            padding: 45px;
+            text-align: center;
+            /* line-height: 100px; Center text vertically */
+        }
+
+        .box1 {
+            /* display: none; */
+            /* visibility: hidden; Element is not visible but still takes up space */
+            display:inline-block;
+            width: 100px;
+            height: 20px;
+            background-color: lightgreen;
+            border: 3px solid rgb(0, 0, 253);
+            margin: 34px;
+            padding: 45px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box box1">
+        i am a box
+    </div>
+    <div class="box">
+        also i am a box
+    </div>
+    <span>
+        i am a span
+    </span>
+    <span>
+        i am another span
+    </span>
+
+</body>
+</html>
